@@ -1,0 +1,27 @@
+<table>
+  
+<tr>
+  <th>Incident number</th>
+  <th>Category</th>
+  <th>Date</th>
+  <th>Address</th>
+  <th>Description</th>
+  <th>Resolution</th>
+</tr>
+
+<% @incidents.each do |incident| %>
+  
+<tr>
+  <td><%= incident["incidntnum"] %></td>
+  <td><%= incident["category"] %></td>
+  <td><%= incident["date"] %></td>
+  <td><%= incident["address"] %></td>
+  <td><%= incident["descript"] %></td>
+  <td><%= incident["resolution"] %></td>
+</tr>
+
+
+<% end %>
+
+
+</table>
